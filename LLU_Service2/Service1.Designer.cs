@@ -1,6 +1,6 @@
 ﻿namespace LLU_Service2
 {
-    partial class Service1
+    partial class Scheduler
     {
         /// <summary> 
         /// Required designer variable.
