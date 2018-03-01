@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2024
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLU_Service2", "LLU_Service2\LLU_Service2.csproj", "{5E660730-5EEC-445F-8E21-8DEDC2CECCD1}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5E660730-5EEC-445F-8E21-8DEDC2CECCD1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5E660730-5EEC-445F-8E21-8DEDC2CECCD1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5E660730-5EEC-445F-8E21-8DEDC2CECCD1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5E660730-5EEC-445F-8E21-8DEDC2CECCD1}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {890DAD9B-6665-472B-83D6-8E5EE49BBF9B}
+	EndGlobalSection
+EndGlobal
