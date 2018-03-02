@@ -12,7 +12,8 @@ namespace NSLLU_TestSQL
         static void Main()
         {
             string ret = "";
-            string sqlConnectionString = "Server=localhost; Database=LLUTEST; Integrated Security = SSPI; ";
+            //string sqlConnectionString = "Server=localhost; Database=LLUTEST; Integrated Security = SSPI; ";
+            string sqlConnectionString = "Server=localhost; Database=LLUTEST; User Id = LLU_LocalDBAccess; Password = llserv ";
             SqlConnection cnn = new SqlConnection(sqlConnectionString);
             SqlCommand sqlCommand;
             SqlDataReader sqlDatareader;

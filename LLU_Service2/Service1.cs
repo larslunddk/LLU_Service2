@@ -24,22 +24,25 @@ namespace LLU_Service2
             timer1 = new Timer();
             this.timer1.Interval = 3000;
             //this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Tick);
-            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_SQLValidate);
-            Library.writeErrorLog("LLU_Servic2 started");
+            this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.Timer1_SQLValidate);
+            timer1.Enabled = true;
+            Library.writeErrorLog("LLU_Service2 started 13");
         }
-        private void timer1_SQLValidate(object sender, ElapsedEventArgs e)
+        private void Timer1_SQLValidate(object sender, ElapsedEventArgs e)
         {
             Library.ValidateSQLContent();
+            //Library.writeErrorLog("LLU_Servic2 SQL Validation");
         }
 
-/*        private void timer1_Tick(object sender, ElapsedEventArgs e)
-        {
-            Library.writeErrorLog("Timer has done a succesfull job");
-        }
-*/
+        //private void timer1_Tick(object sender, ElapsedEventArgs e)
+        //{
+        //    Library.writeErrorLog("Timer has done a succesfull job");
+        //}
+
         protected override void OnStop()
         {
-            Library.writeErrorLog("LLU_Servic2 stopped");
+            timer1.Enabled = false;
+            Library.writeErrorLog("LLU_Service2 stopped 13");
         }
     }
 }
