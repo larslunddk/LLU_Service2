@@ -7,7 +7,11 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLU_Service2", "LLU_Service
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test_LLU_Service2", "Test_LLU_Service2\Test_LLU_Service2.csproj", "{3BA565CB-8F64-42A0-95DF-9B6A620E6B79}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LLU_TestSQL", "ConsoleApp1\LLU_TestSQL.csproj", "{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}"
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{823DE67C-69AA-4855-A8EE-DA57A632D91A}"
+	ProjectSection(SolutionItems) = preProject
+		read_me.txt = read_me.txt
+		read_me_Install_Uninstall_instructions.txt = read_me_Install_Uninstall_instructions.txt
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -53,22 +57,6 @@ Global
 		{3BA565CB-8F64-42A0-95DF-9B6A620E6B79}.Release|x64.Build.0 = Release|Any CPU
 		{3BA565CB-8F64-42A0-95DF-9B6A620E6B79}.Release|x86.ActiveCfg = Release|Any CPU
 		{3BA565CB-8F64-42A0-95DF-9B6A620E6B79}.Release|x86.Build.0 = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|ARM.ActiveCfg = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|ARM.Build.0 = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|x64.ActiveCfg = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|x64.Build.0 = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Debug|x86.Build.0 = Debug|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|Any CPU.Build.0 = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|ARM.ActiveCfg = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|ARM.Build.0 = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|x64.ActiveCfg = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|x64.Build.0 = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|x86.ActiveCfg = Release|Any CPU
-		{DEDA5499-9F31-4C2C-B050-5A11A2C966E2}.Release|x86.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

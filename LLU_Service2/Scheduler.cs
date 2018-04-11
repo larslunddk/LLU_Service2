@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Configuration;
 using System.Data;
 using System.Diagnostics;
 using System.Linq;
@@ -26,23 +27,27 @@ namespace LLU_Service2
             //this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.timer1_Tick);
             this.timer1.Elapsed += new System.Timers.ElapsedEventHandler(this.Timer1_SQLValidate);
             timer1.Enabled = true;
-            Library.writeErrorLog("LLU_Service2 started 13");
+            timer1.Start();
+            //Library.WriteErrorLog(ConfigurationManager.AppSettings["AP_Comment"]);
         }
         private void Timer1_SQLValidate(object sender, ElapsedEventArgs e)
         {
-            Library.ValidateSQLContent();
-            //Library.writeErrorLog("LLU_Servic2 SQL Validation");
+            LibrarySQL.ExecSQLfromAppConfig();
+            
+//            LibrarySQL.ShowActiveStatements_exec();
         }
 
-        //private void timer1_Tick(object sender, ElapsedEventArgs e)
-        //{
-        //    Library.writeErrorLog("Timer has done a succesfull job");
-        //}
+        private void timer1_Tick(object sender, ElapsedEventArgs e)
+        {
+            Library.WriteErrorLog("Timer has done a succesfull job");
+            Library.ReadEventlog(DateTime.Now);
+        }
 
         protected override void OnStop()
         {
             timer1.Enabled = false;
-            Library.writeErrorLog("LLU_Service2 stopped 13");
+            Library.WriteErrorLog("LLU_Service2 stopped 15");
+            Library.WriteErrorLog(ConfigurationManager.AppSettings["AP_Comment"]);
         }
     }
 }
